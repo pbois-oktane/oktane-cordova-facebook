@@ -25,7 +25,7 @@
             </feature>
         </config-file>
         <framework src="com.facebook.android:facebook-android-sdk:4.28.0" />
-        <resource-file src="src/android/StringsFb.xml" target="res/values/strings.xml" />
+        <resource-file src="src/android/StringsFb.xml" target="res/values/stringsFb.xml" />
         
 
         <config-file parent="/manifest/application" target="AndroidManifest.xml">
