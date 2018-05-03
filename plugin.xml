@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-facebook" version="0.0.1">
+    <name>Facebook Analytic</name>
+
+    <description>An Android Cordova plugin that allows users to display simple Toast messages at the bottom of the screen.</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,toast,message,alert</keywords>
+    <repo>https://github.com/pbois-oktane/oktane-cordova-facebook.git</repo>
+    <issue>https://github.com/pbois-oktane/oktane-cordova-facebook/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/plugin.js" name="facebookAnalytic">
+        <clobbers target="oktane.plugin.facebookAnalytic" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="FacebookAnalytic">
+                <param name="android-package" value="oktane.facebook"/>
+            </feature>
+        </config-file>
+        <framework src="com.facebook.android:facebook-android-sdk:4.28.0" />
+        <resource-file src="src/android/StringsFb.xml" target="res/values/strings.xml" />
+        
+
+        <config-file parent="/manifest/application" target="AndroidManifest.xml">
+            <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+        </config-file>
+        <!--<source-file src="src/android/ToastyPlugin.java" target-dir="src/com/stanleyidesis/cordova/plugin" />-->
+    </platform>
+</plugin>
