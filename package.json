@@ -1,6 +1,6 @@
 {
-    "name": "oktane-cordova-facebook",
-    "version": "0.0.1",
+    "name": "cordova-plugin-facebook",
+    "version": "0.0.3",
     "description": "An Android Cordova plugin that allows users to display simple Toast messages at the bottom of the screen.",
     "cordova": {
       "id": "oktane-cordova-facebook",
