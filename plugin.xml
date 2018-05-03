@@ -33,4 +33,29 @@
         </config-file>
         <!--<source-file src="src/android/ToastyPlugin.java" target-dir="src/com/stanleyidesis/cordova/plugin" />-->
     </platform>
+
+    <platform name="ios">
+
+        <!-- Bolts framework -->
+        <framework src="src/ios/Bolts.framework" custom="true" />
+
+        <!-- Facebook framework -->
+        <framework src="src/ios/FBSDKCoreKit.framework" custom="true" />
+
+        <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+            <array>
+                <dict>
+                    <key>CFBundleURLSchemes</key>
+                    <array>
+                        <string>fb462756754142848</string>
+                    </array>
+                </dict>
+            </array>
+            <key>FacebookAppID</key>
+            <string>462756754142848</string>
+            <key>FacebookDisplayName</key>
+            <string>Gestrio</string>
+        </config-file>
+
+    </platform>
 </plugin>
