@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-facebook" version="0.0.1">
+        id="oktane-cordova-facebook" version="0.1.1">
     <name>Facebook Analytic</name>
 
     <description>An Android Cordova plugin that allows users to display simple Toast messages at the bottom of the screen.</description>
@@ -21,7 +21,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FacebookAnalytic">
-                <param name="android-package" value="oktane.facebook"/>
+                <param name="android-package" value="oktane.cordova.facebook"/>
             </feature>
         </config-file>
         <framework src="com.facebook.android:facebook-android-sdk:4.28.0" />
